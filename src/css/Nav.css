@@ -1,0 +1,79 @@
+/*  nav styling */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav {
+  background: transparent;
+  position: relative;
+  justify-content: space-between;
+  min-height: 8vh;
+  height: 0;
+  overflow-y: hidden;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+
+nav .nav-brand a {
+  display: block;
+  padding: 1.3rem 1rem;
+  letter-spacing: 3px;
+  font-size: 32px;
+  font-family: var(--mainTitleFont);
+}
+
+nav .nav-items {
+  list-style-type: none;
+  margin: 0;
+  font-family: var(--mainOtherFont);
+}
+
+nav .nav-items .nav-link {
+  padding: 1.3rem 1rem;
+  font-size: 20px;
+}
+
+nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  cursor: pointer;
+}
+
+nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.3rem 1rem;
+  font-size: 32px;
+  display: none;
+  color: var(--mainWhite);
+}
+
+/* end of nav styling */
+/* banner styling */
+
+/* responsive */
+@media all and (max-width: 840px) {
+  nav .nav-items {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column !important;
+    display: block !important;
+  }
+
+  nav .toggle-collapse .toggle-icons {
+    display: flex;
+  }
+
+  .show {
+    overflow-y: visible !important;
+  }
+}
