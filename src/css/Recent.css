@@ -1,0 +1,65 @@
+.recent {
+  text-align: center;
+}
+
+.recent .title {
+  color: var(--mainDarkGrey);
+  font-weight: 600;
+  font-family: var(--mainTitleFont);
+  letter-spacing: 0.5px;
+  font-size: 24px;
+}
+
+.recent .gallery {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.column {
+  padding: 10px;
+}
+
+.recent img {
+  width: 100%;
+}
+
+.recent hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.quote {
+  padding-top: 150px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.quote .quote-text {
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--mainDarkGrey);
+  font-size: 18px;
+  font-family: var(--mainOtherFont);
+}
+
+.quote .author {
+  font-family: var(--mainTitleFont);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--mainDarkGrey);
+  padding-top: 20px;
+}
+
+.recent img:hover {
+  background-color: var(--mainDarkGrey);
+}
+
+.padding {
+  padding-bottom: 100px;
+}
