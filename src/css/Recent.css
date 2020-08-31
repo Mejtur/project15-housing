@@ -15,13 +15,13 @@
   margin: 0 auto;
 }
 
-.row {
+.recent .row {
   display: flex;
   padding-top: 150px;
   padding-bottom: 150px;
 }
 
-.column {
+.recent .column {
   padding: 10px;
 }
 

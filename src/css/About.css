@@ -3,12 +3,14 @@
   background: var(--mainGrey);
 }
 
-.row {
+.about .row {
   display: flex;
 }
 
-.column {
+.about .column {
   flex: 50%;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about img {
