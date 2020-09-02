@@ -1,7 +1,6 @@
 import React from "react";
 
 function Reviev({ text, author }) {
-  console.log(text);
   return (
     <div className="quote">
       <p className="quote-text">

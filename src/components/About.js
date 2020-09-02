@@ -4,12 +4,12 @@ import aboutImg from "../images/about.jpg";
 export default class About extends Component {
   render() {
     return (
-      <div className="about">
-        <div class="row">
-          <div class="column">
-            <img src={aboutImg} alt="About" align="right" />
+      <div className="about" id="about">
+        <div className="row">
+          <div className="column">
+            <img src={aboutImg} alt="About" />
           </div>
-          <div class="column right">
+          <div className="column right">
             <div className="text-container">
               <p className="title">Meet the faces behind Housing - John Doe</p>
               <p className="text">

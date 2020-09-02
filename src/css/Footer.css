@@ -27,8 +27,14 @@
   height: 300px;
 }
 
-.footer .column img {
-  padding-top: 110px;
+.logo {
+  font-size: 60px;
+  padding: 10px;
+  border: 3px solid var(--mainWhite);
+  border-radius: 50%;
+  margin-top: 140px;
+  margin-bottom: 40px;
+  color: var(--mainWhite);
 }
 
 .footer ul {
@@ -56,4 +62,26 @@
   font-weight: 600d;
   font-family: var(--mainOtherFont);
   color: var(--mainWhite);
+}
+
+@media all and (max-width: 840px) {
+  .footer-container {
+    padding-top: 10px;
+  }
+
+  .footer .row {
+    flex-wrap: wrap;
+    flex-direction: column !important;
+  }
+
+  .footer .row .column,
+  .column-left,
+  .column-right {
+    text-align: center !important;
+  }
+
+  .footer .column {
+    border-left: none;
+    border-right: none;
+  }
 }

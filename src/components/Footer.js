@@ -1,38 +1,66 @@
 import React, { Component } from "react";
-import Logo from "../images/Logo.png";
+import { GiHouse } from "react-icons/gi";
+import { Link } from "react-scroll";
 
 export default class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <div className="footer" id="contact">
         <div className="footer-container">
-          <div class="row">
-            <div class="column-left">
+          <div className="row">
+            <div className="column-left">
               <ul>
                 <li>
-                  <a href="">Services</a>
+                  <Link
+                    activeClass="active"
+                    to="recent"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Recent
+                  </Link>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
-            <div class="column">
-              <img src={Logo} alt="logo" align="center" />
+            <div className="column">
+              <GiHouse className="logo" />
             </div>
-            <div class="column-right">
+            <div className="column-right">
               <ul>
                 <li>
-                  <a href="">Facebook</a>
+                  <a href="#">Facebook</a>
                 </li>
                 <li>
-                  <a href="">Instagram</a>
+                  <a href="#">Instagram</a>
                 </li>
                 <li>
-                  <a href="">Pintrest</a>
+                  <a href="#">Pintrest</a>
                 </li>
               </ul>
             </div>

@@ -14,7 +14,8 @@
 }
 
 .about img {
-  width: 450px;
+  width: 380px;
+  float: right;
 }
 
 .right {
@@ -48,4 +49,32 @@
 }
 .column .text-container .text-under {
   padding-bottom: 100px;
+}
+
+@media all and (max-width: 840px) {
+  .about .row {
+    flex-wrap: wrap;
+    flex-direction: column !important;
+  }
+
+  .about .column {
+    flex: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: block;
+  }
+
+  .right {
+    padding-left: 0px;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .column .text-container {
+    width: 100%;
+    text-align: center;
+  }
 }

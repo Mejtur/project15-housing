@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Logo from "../images/Logo.png";
 import Nav from "./Nav";
+import { GiHouse } from "react-icons/gi";
 
 export default class Hero extends Component {
   render() {
@@ -9,7 +9,10 @@ export default class Hero extends Component {
         <div className="banner">
           <Nav />
           <div className="banner-card">
-            <img src={Logo} alt="logo" className="logo" />
+            <p>
+              <GiHouse className="logo" />
+            </p>
+            {/* <img src={Logo} alt="logo" className="logo" /> */}
             <p className="title">Build your</p>
             <p className="title">
               <em>dream</em> home

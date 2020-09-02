@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class HeroInfo extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container" id="services">
         <div className="info-header">
           <p>BEAUTIFUL DESIGN</p>
           <p>CREATIVE ORGANIZATION</p>

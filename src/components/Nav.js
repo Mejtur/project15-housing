@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FaBars } from "react-icons/fa";
-import { CSSTransition } from "react-transition-group";
+// import { CSSTransition } from "react-transition-group";
+import { Link } from "react-scroll";
 
 export default class Nav extends Component {
   constructor(props) {
@@ -29,19 +30,40 @@ export default class Nav extends Component {
         <div>
           <ul className="nav-items flex-row">
             <li className="nav-link">
-              <a href="" className="text-black">
-                Services
-              </a>
+              <Link
+                activeClass="active"
+                to="recent"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Recent
+              </Link>
             </li>
             <li className="nav-link">
-              <a href="" className="text-black">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-link">
-              <a href="" className="text-black">
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

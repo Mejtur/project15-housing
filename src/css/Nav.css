@@ -10,8 +10,8 @@ nav {
   background: transparent;
   position: relative;
   justify-content: space-between;
-  min-height: 8vh;
-  height: 0;
+  /* min-height: 11vh; */
+  height: 9vh;
   overflow-y: hidden;
 }
 
@@ -32,6 +32,7 @@ nav .nav-items {
   list-style-type: none;
   margin: 0;
   font-family: var(--mainOtherFont);
+  cursor: pointer;
 }
 
 nav .nav-items .nav-link {

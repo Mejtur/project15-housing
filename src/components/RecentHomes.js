@@ -14,7 +14,7 @@ const settings = {
 export default class RecentHomes extends Component {
   render() {
     return (
-      <div className="recent">
+      <div className="recent" id="recent">
         <p className="title">Recent Homes</p>
         <div className="gallery">
           <div className="row">
